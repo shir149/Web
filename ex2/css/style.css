@@ -1,0 +1,495 @@
+*{
+    margin:0;padding:0;
+}
+
+header,main,footer,nav,section{
+    display: block;
+}
+
+header{
+ background-color:#ED4C5C; 
+    height: 657px;
+    width: 100%;
+}
+
+body{
+    font-family: Lato;
+}
+
+#logo{
+    width: 24.5px;
+    height: 17.4px;
+    margin-left: 60px;
+    margin-top: 60.8px;
+    margin-right: 7px;
+    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+}
+
+header span{
+    width: 152px;
+    height: 22px;
+    font-size: 18px;
+    color: white;
+    margin-top: 59px;
+    font-family: 'Lato', sans-serif;
+
+}
+#topNav{
+    margin-left: 49px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 45px;
+    margin-top: 45px ;
+
+}
+#topNav a{
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+#topNav a:first-child{
+    font-weight: bold;
+}
+#topNav a:hover {
+    color: gray;
+  }
+
+header img{
+    width: 445px;
+    height: 311px;
+    border-radius: 15px;
+    margin-left: 90px;
+}
+
+header button{
+  margin-top: 45px;
+  margin-left: 51px;
+  width: 160px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #FFFFFF;
+  size: 14px;
+  color: #ED4C5C;
+  border: none;
+  display: flex;
+}
+
+header button a{
+    margin-left: 52px;
+    margin-top: 17px;
+}
+
+#about{
+    width: 1440px;
+    height: 657px;
+    background-color: white;
+    padding-top: 56px;
+}
+
+#about h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+#about p{
+        height: 83px;
+        width: 445px;
+        text-align: justify;
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+}
+
+#about h6 a{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #ED4C5C;
+    width: 71px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#myQA{
+    width: 1110px;
+    height: 345px;
+    left: 50px;
+    top: 1002px;
+}
+
+.cardQA1{
+    position: absolute;
+    width: 350px;
+    height: 248.86px;
+    left: 50px;
+    top: 1002px;
+    right: 30px;
+    border-radius: 8px;
+}
+.cardQA1 img{
+    border-radius: 8px;
+}
+.cardQA2 img{
+ border-radius: 8px;;
+}
+
+.cardQA3 img{
+    border-radius: 8px;
+}
+.cardQA1 a{
+    height: 37px;
+    margin-left: 130px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ED4C5C;
+    text-decoration: none;
+}
+
+.cardQA2{
+    position: absolute;
+    width: 350px;
+    height: 248.86px;
+    left: 430px;
+    top: 1002px;
+    right: 30px;
+    border-radius: 8px;
+}
+.cardQA2 a{
+    height: 37px;
+    margin-left: 130px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ED4C5C;
+    text-decoration: none;
+}
+.cardQA3{
+    position: absolute;
+    width: 350px;
+    height: 248.86px;
+    left: 810px;
+    top: 1002px;
+    right: 30px;
+    border-radius: 8px;
+}
+.cardQA3 a{
+    height: 37px;
+    margin-left: 130px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ED4C5C;
+    text-decoration: none;
+}
+
+#skills{
+    position: absolute;
+    width: 1440px;
+    height: 657px;
+    left: 0px;
+    top: 1314px;
+    
+    background: #F5F4F4;
+}
+#skills h1{
+    position: absolute;
+    width: 300px;
+    height: 47px;
+    left: 50px;
+    top: 57px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+}
+
+#skillsGroup{
+    position: absolute;
+    width: 1110px;
+    height: 226px;
+    left: 50px;
+    top: 160px;
+}
+
+.cardSkill1{
+    position: absolute;
+    width: 255px;
+    height: 226px;
+    background: #FFFFFF;
+}
+
+.cardSkill1 img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 87px;
+    top: 59px;
+}
+
+.cardSkill1 h2{
+    position: absolute;
+    left: 71px;
+    top: 139px;
+    
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #101010;
+}
+
+.cardSkill1 span{
+    position: absolute;
+    width: 191px;
+    left: 34px;
+    top: 171px;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+
+.cardSkill2{
+    position: absolute;
+    width: 255px;
+    height: 226px;
+    left: 285px;
+    background: #FFFFFF;
+}
+
+.cardSkill2 img{
+position: absolute;
+width: 66px;
+height: 66px;
+left: 94px;
+top: 65px;
+}
+
+.cardSkill2 h2{
+    position: absolute;
+    width: 55px;
+    height: 22px;
+    left: 100px;
+    top: 139px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    color: #101010;
+}
+
+.cardSkill2 span{
+    position: absolute;
+    width: 191px;
+    left: 34px;
+    top: 171px;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.cardSkill3{
+    position: absolute;
+    width: 255px;
+    height: 226px;
+    left: 570px;    
+    background: #FFFFFF;
+}
+
+
+.cardSkill3 img{
+position: absolute;
+width: 66px;
+height: 66px;
+left: 94px;
+top: 65px;
+}
+
+.cardSkill3 h2{
+    position: absolute;
+    width: 122px;
+    height: 22px;
+    left: 66px;
+    top: 139px;
+    
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #101010;
+}
+
+.cardSkill3 span{
+    position: absolute;
+    width: 191px;
+    left: 34px;
+    top: 171px;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+.cardSkill4{
+    position: absolute;
+    width: 255px;
+    height: 226px;
+    left: 855px;
+    background: #FFFFFF;
+}
+
+
+.cardSkill4 img{
+position: absolute;
+width: 66px;
+height: 66px;
+left: 94px;
+top: 65px;
+}
+
+.cardSkill4 h2{
+    position: absolute;
+    width: 122px;
+    height: 22px;
+    left: 66px;
+    top: 139px;
+    
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #101010;
+}
+
+.cardSkill4 span{
+    position: absolute;
+    width: 191px;
+    left: 34px;
+    top: 171px;
+
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #000000;
+}
+
+
+
+
+footer {
+    position: absolute;
+    top: 1971px;
+    background-color: #ED4C5C;
+    display: flex;
+    align-items: center;
+    padding-top: 29px;
+    padding-bottom: 23px;
+    width: 100%;
+}
+
+footer section{
+    position: absolute;
+    width: 134px;
+    height: 32px;
+    left: 50px;
+    top: 20px;
+}
+
+footer section a{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 55px;
+    top: -10px;
+}
+
+#gmail{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: -10px;
+}
+#instagram{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 55px;
+    top: -8px;
+}
+
+#facebook{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 110px;
+    top: -8px;
+}
+
+
+footer h6{
+    position: absolute;
+    width: 310px;
+    height: 28px;
+    left: 264px;
+    top: -10px;
+    
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #FFFFFF;
+ }
