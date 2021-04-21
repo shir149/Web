@@ -44,10 +44,9 @@ nav {
     background-color: black;
     display: flex;
     align-items: center;
-    float: left;
 }
 
-nav ul {
+#layout1 nav>ul {
     display: flex;
     margin: 0 auto;
     width: 1000px;
@@ -60,16 +59,13 @@ nav a {
 
 nav ul li {
     list-style: none;
-    color: white;
-    float: left;
 }
 
 .selected {
     background-color: #2F96B4;
 }
 
-nav ul li a {
-    display: block;
+#layout1 nav li a {
     width: 233px;
     height: 41px;
     display: flex;
@@ -77,16 +73,12 @@ nav ul li a {
     justify-content: center;
 }
 
-nav ul:first-child li a {
-    list-style: none;
-    color: white;
-}
 
 nav a:hover {
     color: gray;
 }
 
-main {
+#layout1 main {
     height: 755px;
     width: 696px;
     position: relative;
@@ -97,7 +89,7 @@ main {
     display: flex;
 }
 
-.container {
+.container-boxes {
     display: flex;
     flex-wrap: wrap;
     height: 235px;
@@ -105,30 +97,31 @@ main {
     justify-content: space-between;
 }
 
-.container.upbox {
-    position: absolute;
+.container-boxes {
     margin-left: 39px;
     margin-top: 82px;
 }
 
-.container.downbox {
+#layout1 main>section:nth-last-child(1) {
     position: absolute;
     bottom: 24px;
     right: 24px;
 }
 
-.container section {
+.container-boxes>section {
     height: 100px;
     width: 100px;
     background-color: #B94A48;
 }
-
-aside {
+#layout1 aside{
     width: 241px;
-    background-color: #EEEEEE;
+}
+aside {
+    
+    background-color: #eeeeee;
 }
 
-aside section {
+#layout1 aside>section {
     background-color: #B94A48;
     height: 51px;
     width: 142px;
@@ -142,76 +135,57 @@ footer {
     background-color: #d6d6d6;
 }
 
-#secNav {
+#layout2 nav {
     width: 143px;
     background-color: black;
     height: 756px;
+    display: block;
     position: relative;
 }
 
-#secNav ul {
-    align-items: center;
-    width: 142px;
-}
 
-#secNav a {
-    text-decoration: none;
-    color: white;
+#layout2 nav a {
     margin-left: 6px;
+    
 }
 
-#secNav ul li {
-    list-style: none;
-    color: white;
-}
 
-#secNav ul li a {
-    display: block;
-    width: 142px;
+#layout2 nav ul li a {
     height: 57px;
     display: flex;
     align-items: center;
 }
 
-#secNav a:hover {
+#layout2 nav a:hover {
     color: gray;
 }
 
-.aside {
+#layout2 aside {
     width: 260px;
-    background-color: #eeeeee;
+}
+
+
+#layout2 aside .container-boxes {
     position: relative;
-}
-
-.container2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 235px;
-    width: 235px;
-    justify-content: space-between;
-    align-content: space-between;
-}
-
-.container2 {
-    position: absolute;
-    top: 510px;
+    margin-top: 510px;
     margin-left: 11px;
+    
+    
 }
-
-.container2 section {
+.container-boxes>section {
     height: 100px;
     width: 100px;
+}
+
+#layout2 Main {
+    width: 600px;
+    position: relative;
+}
+#layout2 section:empty {
     background-color: #468847;
 }
 
-#secMain {
-    height: 758px;
-    width: 600px;
-    position: relative;
-    top: 0px
-}
-
-#s1 {
+#rectangle1 {
     float: left;
     background-color: #468847;
     height: 324px;
@@ -220,7 +194,7 @@ footer {
     margin-left: 24px;
 }
 
-#s2 {
+#rectangle2 {
     height: 255px;
     width: 268px;
     background-color: #468847;
@@ -228,7 +202,7 @@ footer {
     margin-top: 22px;
 }
 
-#s3 {
+#rectangle3 {
     height: 387px;
     width: 270px;
     background-color: #468847;
@@ -237,7 +211,7 @@ footer {
     margin-left: 24px;
 }
 
-#s4 {
+#rectangle4 {
     height: 363px;
     width: 268px;
     background-color: #468847;
@@ -248,3 +222,88 @@ footer {
 .clear {
     clear: both;
 }
+
+#layout3 nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+#layout3 nav li a {
+    width: 233px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layout3 main{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#layout3 footer{
+    position: fixed;
+    bottom: 0;
+    width: 1000px;
+}
+
+
+#layout3 main>section{
+    height: 348px;
+    width: 333px
+
+}
+ .plus{
+        background-image: url(../images/plus.png);
+        display: flex;
+        width: 86px;
+        height: 86px;
+        font-size: auto;
+        margin: auto;
+        margin-top: 120px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        align-items: center;
+    }
+
+#layout3 nav{
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+#layout3 #wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+}
+@media  (max-width: 666px) {
+    #layout3 main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #warpper{
+        width: 100%;
+        max-width: 1000px;
+        margin:auto;
+    }
+    #layout3 nav{
+        display: flex;
+        width: 100%;
+    }
+    #layout3 nav ul{
+        display: flex;
+        width: 100%;
+    }
+    
+    #layout3 nav ul li a{
+        display: flex;
+        width: 100%;
+    }
+
+ }
+
+
+    
