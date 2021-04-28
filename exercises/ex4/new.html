@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+		<div class="login-content">
+			<form action="get_form.php" method="get">
+				
+				<h2 class="title">Are you fit to drive?</h2>
+				<br>
+
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>How many hours did you sleep at night?</h5>
+           		   		<input type="text" class="input" name="sleep" pattern= "[0-9]" required>
+           		   </div>
+           		</div>
+
+
+				   <div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Have you drunk alcohol in the last 10 hours?</h5>
+							<input type="text" class="input" name="drunk" required>
+					</div>
+				 </div>
+					
+				<div class="mydiv">
+				<h3>How much did you drink?</h3>
+					<div class="inputcheck">
+					<input type="radio" name="check" value="little">
+					<label>A little</label>
+				</div>
+				<div class="inputcheck">
+					<input type="radio" name="check" value="much">
+					<label>2+2=3</label>
+				</div>
+					<div class="inputcheck">
+					<input type="radio" id="last" name=check value="no"> 
+					<label>Not at all</label>
+				</div>
+				  </div>
+
+
+
+				  <div id="slider">
+					<label > How much confidence you have in driving:</label>
+						<input  name ="slider" min = "1" max = "10" value ="1"style="margin-bottom: 10px" type="range"> 
+					</div>
+            	<input type="submit" class="btn" value="Go Check">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

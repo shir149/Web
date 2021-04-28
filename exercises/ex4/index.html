@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html></html>
+    <head>
+        <meta charset="UTF-8">
+        <title>first form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <form method="get" autocomplete="on"id=validation action="http://se.shenkar.ac.il/teach/web1/2021/get_form3.php">
+        <div id="fullName" class="form-group required">
+                <label for="fullName" class="control-label col-md-4  requiredField"> FullName:</label>
+                <div class="controls col-md-8 ">
+                 <input class="input-md  textinput textInput form-control" id="fullName" name="fullName"  placeholder="Enter full name" style="margin-bottom: 10px" type="text"  
+                 title = "contain only letters and at least one space"> 
+            </div>
+        </div>
+
+         <div id="password" class="form-group required">
+            <label for="password" class="control-label col-md-4  requiredField">Password:</label>
+            <div class="controls col-md-8 "> 
+                <input class="input-md textinput textInput form-control" id="password" name="pass" placeholder="Create a password" style="margin-bottom: 10px" type="password"
+                pattern="{0-9}" minlength="6" title="contain only numbers" >
+            </div>
+        </div>
+
+        <div id="email" class="form-group required">
+            <label for="email" class="control-label col-md-4  requiredField"> Email:</span> </label>
+            <div class="controls col-md-8 ">
+                <input class="input-md emailinput form-control" id="email" name="mail" placeholder="Your current email address" style="margin-bottom: 10px" type="email" />
+            </div>     
+        </div>
+     
+        <div id="url" class="form-group required">
+            <label for="url" class="control-label col-md-4  requiredField"> Website:</label>
+            <div class="controls col-md-8 ">
+                <input class="input-md emailinput form-control" id="url" name="website" placeholder="Your url" style="margin-bottom: 10px" type="url" />
+            </div>     
+        </div>
+
+        <div id="phone" class="form-group required">
+            <label for="phone" class="control-label col-md-4  requiredField"> Phone:</label>
+            <div class="controls col-md-8 ">
+                <input class="input-md textinput textInput form-control" id="phone" name="phone" placeholder="provide your number" style="margin-bottom: 10px" type="tel"
+                pattern="[0-9]{9,10}" title="contain only numbers,between 9 - 10 numbers" >
+           </div> 
+
+      
+        <div id="coffe" class="form-group required">
+            <label for="coffe" class="control-label col-md-4  requiredField"> Coffe: </label>
+            <div class="controls col-md-8 ">
+                <input class="input-md textinput textInput form-control" id="coffe" name="coffe"  style="margin-bottom: 10px" type="number"> 
+           </div> 
+
+
+        <div id="temperature" class="form-group required">
+            <label for="temperature" class="control-label col-md-4  requiredField"> Temperature:</label>
+            <div class="controls col-md-8 ">
+                <input class="input-md textinput textInput form-control" id="temperaturee" name="temper"  style="margin-bottom: 10px" type="range"> 
+           </div> 
+
+
+           <div id="address" class="form-group required">
+            <label for="address" class="control-label col-md-4  requiredField">Address:</label>
+            <div class="controls col-md-8 ">
+                <input class="input-md textinput textInput form-control" id="address" name="address"  style="margin-bottom: 10px" row="3" cols="30"> 
+           </div> 
+           </div>
+
+           <div class="list-unstyled" style="margin-left: 13px">          
+            <span>Interests:</span>
+             <li><hr></li>
+             <label><input type="checkbox" name="interests[]" value = "interest1" checked> Interest 1  </label>
+             <label><input type="checkbox" name="interests[]" value = "interest2"> Interest 2  </label>
+            <label><input type="checkbox" name="interests[]" value = "interest3"> Interest 3  </label>
+            <label><input type="checkbox" name="interests[]" value = "interest4"> Interest 4  </label>
+           </div>
+           <br>
+                
+            
+            <div class="form-group required" style="margin-left: 11px">
+                <label>Gender:</label><br/>
+                <label><input type="radio" name="gender"  value="male" checked /> Male</label>
+                <label><input type="radio" name="gender"  value="Female" /> Female</label> 
+            </div>
+
+
+               <div id="age" class="form-group required">
+                <label for="age" class="control-label col-md-4  requiredField"> Age: </label>
+                <div class="controls col-md-8 ">
+                <select id="age" class="form-group required" name="age"required style="margin-bottom: 10px"> 
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </label>
+                </div>
+                <br>
+
+            <div class="form-group"> 
+                <div class="aab controls col-md-4 "></div>
+                <div class="controls col-md-8 ">
+                    <input type="submit" name="send form" value="send form" class="btn btn-primary btn btn-info" id ="submitBtn" required style="margin-bottom: 10px"/>
+                </div>
+            </div> 
+
+            </form>
+            <script>
+                $('#submitBtn').click(function(e) {
+                checked = $("input[type=checkbox]:checked").length;
+                console.log(checked);
+                if (checked == 0) {
+                    alert("must choose at least one checkbox");
+                    e.preventDefault();
+                }
+                var fullName = $('input[name="fullName"]').val();
+                var onlyChars = /^[A-Za-z ]+$/.test(fullName);
+                console.log(onlyChars);
+                console.log(typeof(fullName));
+                if(fullName){
+                    if(!fullName.includes(" ")){
+                        alert("contain only letters and at least one space");
+                        e.preventDefault();
+                    }
+                }
+                }         
+            )            
+        </script>
+        </body>
+    </html>
